@@ -12,11 +12,11 @@ public class Main {
 
         for (String token : tokens) {
 
-            // If token is a number
+            
             if (Character.isDigit(token.charAt(0))) {
                 stack.push(Integer.parseInt(token));
             } 
-            // If token is an operator
+          
             else {
                 int b = stack.pop();
                 int a = stack.pop();
