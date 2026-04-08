@@ -9,21 +9,21 @@ public class Main {
         int[][] B = new int[n][n];
         int[][] C = new int[n][n];
 
-        // Read matrix A
+       
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 A[i][j] = sc.nextInt();
             }
         }
 
-        // Read matrix B
+      
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 B[i][j] = sc.nextInt();
             }
         }
 
-        // Multiply A and B → C
+      
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 C[i][j] = 0;
@@ -33,7 +33,6 @@ public class Main {
             }
         }
 
-        // Print result matrix C
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(C[i][j]);
