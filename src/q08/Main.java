@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -7,7 +6,6 @@ public class Main {
 
         int[] stack = new int[n]; // max size = n operations
         int top = -1;
-
         for (int i = 0; i < n; i++) {
             String op = sc.next();
 
