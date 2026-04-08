@@ -25,7 +25,7 @@ public class Main {
             area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
         }
 
-        // Print with exactly 2 decimal places
+        
         System.out.printf("Area: %.2f", area);
     }
 }
