@@ -10,23 +10,21 @@ public class Main {
         int top = 0, bottom = n - 1;
         int left = 0, right = n - 1;
         int num = 1;
-
-        // Fill matrix in spiral order
         while (top <= bottom && left <= right) {
 
-            // Left → Right
+
             for (int i = left; i <= right; i++) {
                 arr[top][i] = num++;
             }
             top++;
 
-            // Top → Bottom
+
             for (int i = top; i <= bottom; i++) {
                 arr[i][right] = num++;
             }
             right--;
 
-            // Right → Left
+            
             if (top <= bottom) {
                 for (int i = right; i >= left; i--) {
                     arr[bottom][i] = num++;
@@ -34,7 +32,7 @@ public class Main {
                 bottom--;
             }
 
-            // Bottom → Top
+           
             if (left <= right) {
                 for (int i = bottom; i >= top; i--) {
                     arr[i][left] = num++;
@@ -43,7 +41,6 @@ public class Main {
             }
         }
 
-        // Print matrix
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(arr[i][j]);
@@ -52,7 +49,7 @@ public class Main {
             System.out.println();
         }
 
-        // Calculate primary diagonal sum
+    
         int diagonalSum = 0;
         for (int i = 0; i < n; i++) {
             diagonalSum += arr[i][i];
