@@ -7,20 +7,20 @@ public class Main {
 
         int[] arr = new int[n];
 
-        // Read array
+       
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
         int swaps = 0;
 
-        // Bubble Sort
+        
         for (int i = 0; i < n - 1; i++) {
             boolean swapped = false;
 
             for (int j = 0; j < n - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
-                    // swap
+                  
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
@@ -30,11 +30,11 @@ public class Main {
                 }
             }
 
-            // Optimization: stop if already sorted
+            
             if (!swapped) break;
         }
 
-        // Print sorted array
+        
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i]);
             if (i < n - 1) System.out.print(" ");
